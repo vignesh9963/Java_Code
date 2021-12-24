@@ -1,0 +1,94 @@
+class PersonA
+{
+    int age;
+    String name;
+
+    public PersonA(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+class Student extends PersonA
+{
+    int id;
+    String subject;
+    String teacher;
+
+    public Student(int age, String name, int id, String subject, String teacher) {
+        super(age, name);
+        this.id = id;
+        this.subject = subject;
+        this.teacher = teacher;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                ", id=" + id +
+                ", subject='" + subject + '\'' +
+                ", teacher='" + teacher + '\'' +
+                '}';
+    }
+}
+
+class Employee //extends Student,PersonA
+{
+    int employeeID;
+    int salary;
+    String department;
+
+}
+
+
+public class Inheritance {
+
+    public static void main(String args[])
+    {
+        Student student=new Student(23,"VIGNESH",2021,"JAVA","Ansar");
+        System.out.println(student);
+    }
+}
