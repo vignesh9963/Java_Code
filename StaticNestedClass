@@ -1,0 +1,21 @@
+
+class OuterClass2
+{
+    static int data=10;
+    static class InnerClass2
+    {
+        static void display()
+        {
+            System.out.println("Static Inner Class"+" "+data);
+        }
+    }
+
+}
+
+public class StaticNestedClass {
+
+    public static void main(String args[])
+    {
+          OuterClass2.InnerClass2.display();
+    }
+}
