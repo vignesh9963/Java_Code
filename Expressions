@@ -1,0 +1,55 @@
+import java.sql.SQLOutput;
+
+public class Expressions {
+
+    public static void main(String[] args) {
+
+        System.out.println("Enter two numbers");
+        int first = 10;
+        int second = 20;
+
+        System.out.println(first + " " + second);
+
+        // add two numbers
+        int sum = first + second;
+        System.out.println("The sum is: " + sum);
+
+        //print an interger
+        System.out.println(" Integer "+ first);
+
+        //multiply floating numbers
+        System.out.println("Enter two floating numbers");
+        float a = 12.35f,b = 10.35f;
+        System.out.println(a +" "+b);
+        float mul = a*b;
+        System.out.println(" Multiplying floating numbers "+ mul);
+
+        //ascii value and vice versa
+        int aa= 'A';
+        System.out.println("Ascii value of A is "+ aa);
+
+        char bb=65;
+        System.out.println("Ascii value of 65 is "+ bb);
+
+        //quotient and remainder
+        int third = 25;
+        float rem = third%first;
+        float quo = second/first;
+        System.out.println("Quotient of 20/10 is "+ quo);
+        System.out.println("Remainder of 25/10is "+ rem);
+
+        //int x=0,y=1,n=5;
+      //  for(int i = 1;i<=n;i++)
+        //{
+         //   int next=x+y+n:
+
+    //    }
+       // System.out.println(")
+
+
+
+
+
+
+    }
+}
