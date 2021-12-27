@@ -1,0 +1,70 @@
+public class StringBuffer {
+
+    public static void main(String args[]) {
+        String s = "Java Programming ";
+        System.out.println(s.replaceAll("Java", "Python"));
+        System.out.println(s.replaceFirst("Programming", "Script"));
+        System.out.println(s.indexOf("Programming"));
+        System.out.println(s.indexOf("Java", 2));
+
+        String s1 = s.concat("is known to worldwide");
+        System.out.println(s1);
+        System.out.println(s.substring(5));
+        System.out.println(s.substring(0, 5));
+
+        String s11 = "Python";
+        String s22= "python";
+        //----------------------------equals()
+        if (s11.equals(s22))
+        {
+            System.out.println("Equal");
+        }
+        else
+        {
+            System.out.println("Not Equal");
+        }
+
+
+        //------------------------------equalsIgnoreCase()
+
+        if (s11.equalsIgnoreCase(s22))
+        {
+            System.out.println("Equal");
+        }
+        else
+        {
+            System.out.println("Not Equal");
+        }
+        //trim()
+
+        String s33="      Java programming      ";
+        System.out.println(s33);
+        System.out.println(s33.trim()+ " (trimed)");
+
+        //replace()
+
+        System.out.println(s33.replace('a','A'));
+        System.out.println(s33.replace("Java","C++"));
+
+        String s44 = "Java Programming,Python Programming,C++ Programming";
+        String[] sentences=s44.split(",");
+        System.out.println("----- Sentences  -----");
+
+        if(sentences!=null)
+        {
+            for(String sen:sentences)
+            {
+                System.out.println(sen);
+            }
+        }
+
+
+        System.out.println(s44.contains("Java Programming"));
+
+
+
+
+
+
+    }
+}
