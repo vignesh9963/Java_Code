@@ -1,0 +1,26 @@
+
+class OuterClass {
+    private int a = 10;
+    inner in = new inner();
+
+    public void display() {
+        System.out.println("Outer Class");
+        in.show();
+    }
+
+    class inner {
+        public void show() {
+            System.out.println("Inner Class");
+        }
+    }
+
+}
+public class InnerClass {
+
+    public static void main(String args[])
+    {
+        OuterClass outer=new OuterClass();
+        OuterClass.inner in=outer.new inner();
+        in.show();
+    }
+}
