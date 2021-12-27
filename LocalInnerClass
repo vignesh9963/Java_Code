@@ -1,0 +1,31 @@
+import java.sql.SQLOutput;
+
+class OuterClass1
+{
+    int data=10;
+    void display()
+    {
+        int data1=20;
+        class LocalClass
+        {
+            void message()
+            {
+                System.out.println("Local Class"+" "+data+" "+data1);
+            }
+
+        }
+        LocalClass local=new LocalClass();
+        local.message();
+    }
+}
+
+public class LocalInnerClass {
+
+    public static void main(String args[])
+    {
+        OuterClass1 outer=new OuterClass1();
+        outer.display();
+
+
+    }
+}
